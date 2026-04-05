@@ -137,5 +137,6 @@ const app = new Elysia()
 
 console.log(`🦊 Backend → http://localhost:${app.server?.port}`);
 console.log(`📖 Swagger → http://localhost:${app.server?.port}/swagger`);
-
+console.log(`🦊 FRONTEND_URL → ${process.env.FRONTEND_URL}`);
+console.log(`🦊 GOOGLE_REDIRECT_URI: ${process.env.GOOGLE_REDIRECT_URI}`);
 export type App = typeof app;
